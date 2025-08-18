@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueBlue - Recommendation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: hsl(231, 4%, 69%);
+        }
+        .recommendation-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: rgba(220, 239, 243, 0.9);
+            padding: 20px;
+            box-shadow: 0px 4px 20px rgba(190, 161, 161, 0.5);
+            border-radius: 10px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #3b508e;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        #recommendation {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background-color: rgba(107, 133, 236, 0.895);
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(227, 108, 108, 0.5);
+        }
+        #recommendation-info {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background-color: rgba(107, 133, 236, 0.895);
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #ffffff;
+            background-color: #ff4081;
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #c6cae9;
+        }
+    </style>
+</head>
+<body>
+    <div class="recommendation-container">
+        <h1>Your Costume Recommendation</h1>
+        <p id="recommendation"></p>
+        <p id="recommendation-info"></p>
+        <a href="index.html">Start Over</a>
+    </div>
+    <script>
+        window.onload = function() {
+            var recommendationElement = document.getElementById('recommendation');
+            var recommendationInfoElement = document.getElementById('recommendation-info');
+   
+            console.log('recommendationElement:', recommendationElement);
+            console.log('recommendationInfoElement:', recommendationInfoElement);
+   
+            const recommendations = [
+                {
+                    name: "Beginner Level,",
+                    info: "Protein: Since you prefer unflavored and are lactose-tolerant, Whey Protein Concentrate (Optimum Nutrition) is a solid option. You could also consider a plant-based protein like Pea Protein for variety.Creatine: Creatine Monohydrate (Optimum Nutrition, 5g daily) is ideal for muscle gain and energy support. Continue with this product since it matches your goals. Given your kidney disease concern, consult a healthcare provider to ensure the dosage is safe for long-term use.Pre-Workout: A stimulant-based pre-workout with Beta-Alanine helps boost energy before workouts. Continue using your current Optimum Nutrition product, but check with a doctor to confirm safe use alongside kidney disease.Electrolytes: To enhance hydration and muscle recovery, consider adding an electrolyte mix, particularly if you're on a keto diet. You can try MuscleBlaze Electrolyte Mix to take alongside your pre-workout.Multivitamin: The TrueBasics General Multivitamin should cover basic nutrient gaps. Ensure it doesn't exceed recommended limits, particularly for individuals with kidney concerns.Omega-3: Your current TrueBasics Omega-3 supplement is good for heart health and overall well-being. Keep this as part of your daily routine..",
+            
+                },
+                {
+                    name: "Intermediate Level,",
+                    info: "Protein: Continue with Whey Protein Concentrate from Optimum Nutrition. Since you're aiming for fat loss while gaining muscle, 30g per serving fits well with your goals. If you need variety or additional protein sources, consider Pea Protein as a plant-based alternative.Creatine: Your current dosage of Creatine Monohydrate (3g daily) is suitable for supporting muscle gain and energy. Since you have kidney disease, it's advisable to monitor your intake and consult with a healthcare provider to ensure this dosage is safe for you.Pre-Workout: The stimulant-based pre-workout with Beta-Alanine (Optimum Nutrition) helps with energy and endurance. Your dosage of 15g is higher than usual, so ensure it aligns with your tolerance levels and kidney health. Consulting with a healthcare provider for safety is recommended.Electrolytes: For muscle recovery and hydration, consider MuscleBlaze Electrolyte Mix. This can help replenish electrolytes lost during intense workouts, especially given your high training volume.Multivitamin: Continue with TrueBasics General Multivitamin to cover essential nutrients. Ensure it aligns with your dietary needs and health conditions.Omega-3: Your TrueBasics Omega-3 (220mg EPA, 180mg DHA) is good for heart health. Maintain this as part of your daily routine for its cardiovascular benefits.",
+                },
+                {
+                    name: "Advanced Level,",
+                    info: "Protein: Continue with Whey Protein Concentrate (Optimum Nutrition). A serving of 35g aligns with your muscle gain goals and high training volume. Pea Protein can be used as a plant-based alternative or supplement.Creatine: Your current dosage of Creatine Monohydrate (5g Tangy Orange daily) is appropriate for muscle gain. Given your kidney condition, ensure this dosage is confirmed as safe with your healthcare provider.Pre-Workout: The stimulant-based pre-workout with Beta-Alanine (20g daily) is effective for energy and endurance. Since this is a high dosage, confirm with a healthcare provider that it’s safe considering your kidney health and tolerance.Electrolytes: For hydration and muscle recovery, continue with MuscleBlaze Electrolyte Mix. This will help maintain electrolyte balance, especially with your high training volume.Multivitamin: Continue with TrueBasics General Multivitamin. This will help fill any nutrient gaps and support overall health.Omega-3: TrueBasics Omega-3 (500mg EPA, 250mg DHA) is beneficial for heart health. Maintain this dosage for cardiovascular support.",
+                }
+       
+            ];
+   
+            // Function to randomly pick a recommendation
+            const showRecommendation = () => {
+                if (recommendationElement && recommendationInfoElement) {
+                    // Select a random recommendation
+                    const randomIndex = Math.floor(Math.random() * recommendations.length);
+                    const recommendation = recommendations[randomIndex];
+                   
+                    // Update the elements with the selected recommendation
+                    recommendationElement.textContent = recommendation.name;
+                    recommendationInfoElement.textContent = recommendation.info;
+                } else {
+                    console.error('One or more elements not found.');
+                }
+            };
+   
+            // Call the function to show a recommendation
+            showRecommendation();
+        };
+    </script>
+   
+</body>
+</html>
+
+
+

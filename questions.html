@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CharacterCloset - Questions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+            body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#questionContainer {
+    background-color: hsl(191, 42%, 79%);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+
+h2 {
+    font-size: 1.5em;
+    color: #333333;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#options {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#options label {
+    display: inline-block;
+    padding: 10px;
+    background-color: #dcccd3;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#options input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+button[type="submit"] {
+    background-color: #3f51b5;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #303f9f;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="questionContainer">
+        
+        <h2 id="question"></h2>
+        <form id="questionForm">
+            <div id="options"></div>
+            <button type="submit">Next</button>
+            <div id="recommendation"></div>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
