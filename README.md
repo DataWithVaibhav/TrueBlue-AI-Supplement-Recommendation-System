@@ -1,18 +1,28 @@
 TrueBlue – AI Supplement Recommendation System
 
-TrueBlue is a Supplement Authentication & Certification Platform that ensures trust and transparency in the supplement industry. It helps users verify products, discover certified brands, and get AI-powered supplement recommendations (Whey, Creatine, Multivitamins, Omega-3, BCAA).
+TrueBlue is a Recommendation System that takes input from users (such as their fitness goals, workout plans, and health needs) and suggests the most suitable supplements. It is designed to promote transparency and trust in the supplement industry by guiding users toward the right choices and authentic products.
+
+Whether the goal is muscle gain, fat loss, endurance, or overall health, TrueBlue recommends appropriate supplements like Whey Protein, Creatine, Multivitamins, Omega-3, and BCAA.
 
 🚀 Features
 
-✅ Supplement authenticity verification
+📝 Takes input from users (fitness goals, workout plans, health needs, etc.)
 
-🧪 Brand certification process
+🎯 Recommends supplements tailored to workout plans and lifestyle
 
-🤖 AI-powered supplement recommendations
+✅ Focus on genuine and certified products
 
-🗳 User voting for product prioritization
+🔗 Redirects users to trusted sources (no direct selling)
 
-🔗 Trusted redirects to official websites
+📌 Example Recommendations
+
+🏋️ Muscle Gain → Whey Protein + Creatine
+
+🏃 Fat Loss → BCAA + Omega-3
+
+🧘 General Wellness → Multivitamins + Omega-3
+
+⚡ Endurance Training → Creatine + BCAA
 
 📂 Project Files
 
@@ -22,13 +32,19 @@ about.html – About the project
 
 questions.html – FAQ section
 
-recommendation.html – AI recommendation page
+recommendation.html – Supplement Recommendation System
 
-script.js – Project logic
+script.js – Logic for recommendation
 
 TrueBlue.jpg – Project logo/image
 
-Author
+🛠️ Tech Stack
+
+Frontend: HTML, CSS, JavaScript
+
+Future Scope: AI/ML model for advanced supplement recommendation
+
+👨‍💻 Author
 
 Vaibhav Singh
 💡 Aspiring Data Scientist | Tech Enthusiast
@@ -37,9 +53,3 @@ Vaibhav Singh
 
 🌐 GitHub
  | LinkedIn
-
-🛠️ Tech Stack
-
-Frontend: HTML, CSS, JavaScript
-
-Future Expansion: Python (Flask/Django), AI/ML models
