@@ -28,6 +28,16 @@ script.js – Project logic
 
 TrueBlue.jpg – Project logo/image
 
+Author
+
+Vaibhav Singh
+💡 Aspiring Data Scientist | Tech Enthusiast
+
+📌 Passionate about AI/ML, Data Science, and Product Development
+
+🌐 GitHub
+ | LinkedIn
+
 🛠️ Tech Stack
 
 Frontend: HTML, CSS, JavaScript
