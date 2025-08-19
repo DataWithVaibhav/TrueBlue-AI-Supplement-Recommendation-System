@@ -51,5 +51,4 @@ Vaibhav Singh
 
 📌 Passionate about AI/ML, Data Science, and Product Development
 
-🌐 GitHub
- | LinkedIn
+
