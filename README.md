@@ -44,6 +44,35 @@ Frontend: HTML, CSS, JavaScript
 
 Future Scope: AI/ML model for advanced supplement recommendation
 
+Usage
+
+Clone the repository:
+
+git clone https://github.com/DataWithVaibhav/TrueBlue-AI-Supplement-Recommendation-System.git
+cd TrueBlue-AI-Supplement-Recommendation-System
+
+
+Explore the project:
+
+Open index.html in your web browser to access the project homepage.
+
+Get supplement recommendations:
+
+Navigate to the Recommendation page (recommendation.html).
+
+Enter your fitness goals, workout plan, or health needs.
+
+The system will suggest supplements tailored to your needs, such as:
+
+Muscle Gain → Whey Protein + Creatine
+
+Fat Loss → BCAA + Omega-3
+
+General Wellness → Multivitamins + Omega-3
+
+Endurance Training → Creatine + BCAA
+
+
 👨‍💻 Author
 
 Vaibhav Singh
